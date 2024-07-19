@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}	
+
+/* Layout Properties */
+.logo {
+    width: 228px;
+    height: 27px;
+    opacity: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 1.2px;
+    display: inline-block;
+    padding: 10px 20px;
+}
