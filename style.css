@@ -1,37 +1,222 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
-}	
+}
 
 /* Layout Properties */
 .logo {
-    width: 228px;
-    height: 27px;
-    opacity: 1;
+    width: 14.25rem;
+    height: 1.6875rem;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.9375rem 6.25rem;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
+    gap: 3.75rem;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
     font-family: 'Manrope', sans-serif;
-    letter-spacing: 1.2px;
+    font-weight: bolder;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.075rem;
     display: inline-block;
-    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    padding: 9.375rem 6.25rem;
+    align-items: center;
+}
+
+.aside-left, .aside-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.join-community {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.225rem;
+    color: #000000;
+}
+
+.how-qualify {
+    margin: 3.125rem 0;
+    font-family: 'Chronicle Display', serif;
+    font-weight: 300;
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    letter-spacing: 0.0125rem;
+}
+
+.apply-partner {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    color: #000000;
+    text-decoration: underline;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.aside-right p {
+    font-family: 'Chronicle Display', serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.0125rem;
+    color: #656565;
+    width: fit-content;
+}
+
+/* Benefits Section */
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3.75rem;
+}
+
+.section-subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.225rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin: 3.125rem 0 3.75rem;
+    font-family: 'Chronicle Display', serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: 0.0125rem;
+}
+
+/* Cards Section */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    width: 18.75rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 18.75rem;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    font-family: 'Chronicle Display', serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    letter-spacing: 0.0125rem;
+    color: #656565;
+}
+
+.check-icon {
+    margin-right: 1.25rem;
+}
+
+.start-now {
+    width: 15rem;
+    height: 2.5rem;
+    background: #444444;
+    color: white;
+    margin-top: 3.75rem;
+    cursor: pointer;
+}
+
+/* Images Section */
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.125rem 6.25rem;
+}
+
+.images-container .aside-left {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.images-container .image-wrapper {
+    display: inline-block;
+}
+
+.images-container .aside-right {
+    width: 48%;
+}
+
+.images-container .image {
+    width: 13.75rem;
+    height: 40.75rem;
+    object-fit: cover;
+}
+
+.images-container .section-title {
+    font-family: 'Chronicle Display', serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: 0.0125rem;
+    margin-bottom: 1.875rem;
+}
+
+.images-container .community-access {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.075rem;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+}
+
+.images-container .community-description {
+    font-family: 'Chronicle Display', serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 1.875rem;
 }
