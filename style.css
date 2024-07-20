@@ -372,7 +372,7 @@
         margin-bottom: 2rem;
     }
     .card {
-        width: 20.5rem;
+        width: 18rem;
         height: 24rem;
     }
 
@@ -382,8 +382,8 @@
     }
 
     .card-content {
-        font-size: 0.8rem;
-        line-height: 1.25rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
     }
 
     .check-item {
