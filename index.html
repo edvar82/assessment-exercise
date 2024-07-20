@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessment exercise</title>
+    <title>The vintage bar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Cabeçalho com a barra de navegação -->
     <header>
         <nav class="navbar">
+            <img src="assets/menu.svg" alt="menu" class="menu-icon">
             <img src="assets/logo.jpg" alt="logo" class="logo">
             <div class="nav-links">
-                <a href="#">Plataform</a>
-                <a href="#">TVB Creative</a>
-                <a href="#">Become Partner</a>
+                <a href="#">Plataform </a>
+                <a href="#">TVB Creative </a>
+                <a href="#">Become a partner </a>
             </div>
         </nav>
     </header>
+
+    <!-- Drawer -->
+    <div class="drawer">
+        <img src="assets/logo.jpg" alt="logo" class="drawer-logo">
+        <img src="assets/close.svg" alt="close" class="close-icon">
+        <div class="drawer-links">
+            <hr class="navbar-divider"> 
+            <a href="#">Plataform <img src="assets/arrow.svg" alt="arrow" class="arrow-icon"></a>
+            <hr class="navbar-divider-text"> 
+            <a href="#">TVB Creative <img src="assets/arrow.svg" alt="arrow" class="arrow-icon"></a>
+            <hr class="navbar-divider-text"> 
+            <a href="#">Become a partner <img src="assets/arrow.svg" alt="arrow" class="arrow-icon"></a>
+        </div>
+        <div class="contact-info">
+            <p>Call us</p>
+            <p>Nicolai Nhr</p>
+            <p>Head of partnerships</p>
+            <img src="assets/line.png" alt="barra" class="barra-icon">
+            <p>+45 5367 7979</p>
+            <p>nin@thevintagebar.com</p>
+        </div>
+    </div>
 
     <!-- Conteúdo principal -->
     <main>
@@ -68,7 +91,7 @@
                             <p>Access to automated product handling</p>
                         </div>
                     </div>
-                    <button class="start-now">Start Now</button>
+                    <button class="start-now">Start now</button>
                 </article>
 
                 <!-- Cartão de serviços extras -->
@@ -108,28 +131,50 @@
                     <button class="start-now">Get in talk</button>
                 </article>
             </div>
+        </section>
 
-            <!-- Seção de imagens -->
-            <div class="images-container">
-                <aside class="aside-left">
-                    <div class="image-wrapper">
-                        <img src="assets/sandals.JPG" alt="Sandals" class="image">
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/tineandreaa.jpg" alt="Tine Andrea" class="image">
-                    </div>
-                </aside>
-                <aside class="aside-right">
-                    <h1 class="section-title">Here's what you'll gain</h1>
-                    <p class="community-access">ACCESS TO OUR GROWING COMMUNITY</p>
-                    <p class="community-description">The Vintage Bar has various platforms and social channels – most notably our Instagram with more than 600k followers – and as a partner on The Vintage Bar your items will be included in the content we produce and showcase on these platforms.</p>
-                    <p class="community-access">ACCESS TO OUR GROWING COMMUNITY</p>
-                    <p class="community-description">The Vintage Bar has various platforms and social channels – most notably our Instagram with more than 600k followers – and as a partner on The Vintage Bar your items will be included in the content we produce and showcase on these platforms.</p>
-                    <p class="community-access">ACCESS TO OUR GROWING COMMUNITY</p>
-                    <p class="community-description">The Vintage Bar has various platforms and social channels – most notably our Instagram with more than 600k followers – and as a partner on The Vintage Bar your items will be included in the content we produce and showcase on these platforms.</p>
-                </aside>
-            </div>
+        <!-- Seção de imagens -->
+        <section class="images-container">
+            <aside class="aside-left">
+                <div class="image-wrapper">
+                    <img src="assets/sandals.JPG" alt="Sandals" class="image">
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/tineandreaa.jpg" alt="Tine Andrea" class="image">
+                </div>
+            </aside>
+            <aside class="aside-right">
+                <h1 class="section-title">Here's what you'll gain</h1>
+                <p class="community-access">ACCESS TO OUR GROWING COMMUNITY</p>
+                <p class="community-description">The Vintage Bar has various platforms and social channels – most notably our Instagram with more than 600k followers – and as a partner on The Vintage Bar your items will be included in the content we produce and showcase on these platforms.</p>
+                <p class="community-access">ACCESS TO OUR GROWING COMMUNITY</p>
+                <p class="community-description">The Vintage Bar has various platforms and social channels – most notably our Instagram with more than 600k followers – and as a partner on The Vintage Bar your items will be included in the content we produce and showcase on these platforms.</p>
+                <p class="community-access">ACCESS TO OUR GROWING COMMUNITY</p>
+                <p class="community-description">The Vintage Bar has various platforms and social channels – most notably our Instagram with more than 600k followers – and as a partner on The Vintage Bar your items will be included in the content we produce and showcase on these platforms.</p>
+            </aside>
         </section>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.querySelector('.menu-icon');
+            const closeIcon = document.querySelector('.close-icon');
+            const drawer = document.querySelector('.drawer');
+            const mainContent = document.querySelector('main');
+
+            drawer.style.display = 'none';
+            mainContent.style.display = 'block';
+
+            menuIcon.addEventListener('click', () => {
+                drawer.style.display = 'block';
+                mainContent.style.display = 'none';
+            });
+
+            closeIcon.addEventListener('click', () => {
+                drawer.style.display = 'none';
+                mainContent.style.display = 'block';
+            });
+        }); 
+    </script>
 </body>
 </html>
